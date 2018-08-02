@@ -2357,7 +2357,7 @@ label ch13_exclusive_natsuki:
         n "[player]..."
         "Natsuki suddenly appears from behind her door."
         n "What are you doing here?"
-        mc "Well, you're mom let me in and--"
+        mc "Well, your mom let me in and--"
         n 2be "I meant what are you doing at my house?"
         n "Sayori already came to visit me but it's not like she's staying."
         n "If you came to visit, then you can forget it."
@@ -2425,7 +2425,7 @@ label ch13_exclusive_natsuki:
         mc "I chose to help you because I thought that you'd have the hardest time with your preparations."
         mc "I'm not saying that you couldn't do it yourself..."
         mc "I just want to make your job a bit easier."
-        "Especially with the stuff that's happened to you in the past couple of days."
+        mc "Especially with the stuff that's happened to you in the past couple of days."
         n 2bf "What happens if I say no to your help?"
         mc "Then Sayori will probably be mad at me for not trying hard enough to help you."
         mc "It's your decision though..."
@@ -2439,7 +2439,7 @@ label ch13_exclusive_natsuki:
         mc "I actually have something but first, do you have any ideas?"
         "Natsuki thinks for a moment."
         n 1bh "Nothing off the top my head."
-        n "But you said that you weren't doing your own preparatios because you weren't great at anything, right?"
+        n "But you said that you weren't doing your own preparations because you weren't great at anything, right?"
         mc "Yeah?"
         n 1bk "So that must mean Sayori thinks I'm at least good at something."
         mc "I think the club actually thought it was a good idea for you to bake something."
@@ -2517,18 +2517,18 @@ label ch13_exclusive_natsuki:
         mo 1c "Ahaha, I should really use my head."
         $ renpy.sound.set_volume(0.25)
         play sound "mod_assets/sfx/metaldrop.ogg"
-        "Haruki begins to gets up from the floor."
+        "Haruki begins to get up from the floor."
         $ pause(1.5)
         $ renpy.sound.set_volume(1.0)
         "She brushes off some of the dust on her."
         mo "Anyway, what did you want to ask me?"
         show natsuki 2bc zorder 3 at f21
         show momsuki zorder 2 at t22
-        n "I could your help baking a cake."
+        n "I could use your help baking a cake."
         n "It's for Inauguration Day."
         show natsuki zorder 2 at t21
         show momsuki 1a zorder 3 at f22
-        mo "For the special day, is it?"
+        mo "For the special day, isn't it?"
         mo "Well, I'd be more than happy to help you bake it, Natsuki!"
         show natsuki 1bk zorder 3 at f21
         show momsuki zorder 2 at t22
@@ -2543,7 +2543,7 @@ label ch13_exclusive_natsuki:
         show natsuki zorder 2 at t21
         mc "I think she's saying that you should bake it yourself."
         show momsuki 1c zorder 3 at f22
-        mo "You're friend is right, Natsuki."
+        mo "Your friend is right, Natsuki."
         mo "If you don't bake it yourself, then it wouldn't really be your preparations."
         mo "It's kind of cheating, isn't it?"
         show natsuki 1bq zorder 3 at f21
@@ -5689,7 +5689,7 @@ label ch13_natsuki_outcomeshared_date:
     n 1bi "What?"
     n "How did you come up with this idea?"
     mc "I figured it's a pretty important thing in your life."
-    mc "It has a lot of sentinmental value, doesn't it?"
+    mc "It has a lot of sentimental value, doesn't it?"
     n 1bq "Well...yeah but..."
     n "How exactly are we going to do that?"
     mc "I was thinking we could hire someone to do it for us."
@@ -5707,13 +5707,13 @@ label ch13_natsuki_outcomeshared_date:
     mc "I hope it's not gonna cause any problems."
     mc "I wouldn't want to hurt you."
     n 1bq "N-No...of course it isn't."
-    n "But there is problem with doing the portrait idea."
+    n "But there is a problem with doing the portrait idea."
     mc "What would that be?"
     if ch12_outcome == 3:
         n 1bh "My parents aren't just going to let you or me take it away from this house."
         n "Even if it's broken, it's not like they're just going to throw it away."
         mc "Then we don't tell them."
-        mc "They're busy cleaning after all."
+        mc "They're busy cleaning, after all."
         n 2bf "Are you telling me to lie to my parents?"
         mc "Not exactly..."
         mc "This is partly for them, isn't it?"
