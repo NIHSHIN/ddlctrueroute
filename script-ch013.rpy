@@ -2604,7 +2604,7 @@ label ch13_exclusive_natsuki:
         mc "Well, we do have to choose some books for tomorrow."
         mc "We could do that in the meantime."
         show momsuki 1c zorder 3 at f22
-        mo "Great! You two do that and I'll write down the recipe to you."
+        mo "Great! You two do that and I'll write down the recipe for you."
         mo "After that, I'll show you exactly how my mom showed me how to bake it."
         mo "Assuming you two aren't too quick, I'll be downstairs waiting for the two of you."
         show natsuki 2ba zorder 3 at f21
@@ -2712,7 +2712,7 @@ label ch13_exclusive_natsuki:
         n 1bb "Do you have books at home you're going to choose?"
         n "You can choose from some of the books here...if you want."
         n 1bq "You don't have to if you don't want to...okay?"
-        mc "Alright, Natsuki I got it."
+        mc "Alright, Natsuki, I got it."
         mc "I'm sure I'll find something."
         "I search through the pile of books on her table."
         "Almost every single one of them is manga."
@@ -2758,7 +2758,7 @@ label ch13_exclusive_natsuki:
         mc "What do you mean?"
         n 2bb "You probably don't like those books as much another manga you know, right?"
         mc "That's true but..."
-        n 2bo "I don't want to force you anything...!"
+        n 2bo "I don't want to force you on anything...!"
         n "But you should probably think about it."
         n 2bq "It might make things easier tomorrow."
         mc "I guess so..."
@@ -2827,7 +2827,7 @@ label ch13_exclusive_natsuki:
         mc "I should probably go home then..."
         mc "You are baking a cake after all."
         mc "You two are going to be pretty busy with baking that thing and I don't really want to interfere."
-        show natuski 1bc zorder 3 at f21
+        show natsuki 1bc zorder 3 at f21
         n "H-Huh? W-Wait, [player]."
         n "You don't have to go just yet..."
         n 1bs "We still have other things we need to do."
@@ -2860,7 +2860,7 @@ label ch13_exclusive_natsuki:
         "Harsuki smiles gently."
         mo "You should get going."
         show momsuki zorder 2 at t22
-        mc "Right...well, I'll see you tomorrow Natuski."
+        mc "Right...well, I'll see you tomorrow Natsuki."
         show natsuki 1bk zorder 3 at f21
         n "See you..."
         "I start walking towards the door."
