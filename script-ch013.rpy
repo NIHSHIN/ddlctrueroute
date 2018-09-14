@@ -3256,7 +3256,11 @@ label ch13_exclusive_natsuki:
         n 2bb "You probably don't like those books as much another manga you know, right?"
         mc "That's true but..."
 <<<<<<< HEAD
+<<<<<<< HEAD
         n 2bo "I don't want to force you on anything...!"
+=======
+        n 2bo "I don't want to force you or anything...!"
+>>>>>>> upstream/master
 =======
         n 2bo "I don't want to force you or anything...!"
 >>>>>>> upstream/master
