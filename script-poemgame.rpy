@@ -18,6 +18,11 @@ init python:
 
     full_wordlist = []
     full_wordlist_old = []
+    sayori_wordlist = []
+    natsuki_wordlist = []
+    yuri_wordlist = []
+    monika_wordlist = []
+
     # New Wordlist
     with renpy.file('poemwords_mod.txt') as wordfile:
         for line in wordfile:
@@ -28,7 +33,16 @@ init python:
 
 
             x = line.split(',')
+            # currentword = PoemWord(x[0], float(x[1]), float(x[2]), float(x[3]), float(x[4]))
             full_wordlist.append(PoemWord(x[0], float(x[1]), float(x[2]), float(x[3]), float(x[4])))
+            # if currentword.sPoint >= 3:
+            #     sayori_wordlist.append(currentword)
+            # elif currentword.nPoint >= 3:
+            #     natsuki_wordlist.append(currentword)
+            # elif currentword.yPoint >= 3:
+            #     yuri_wordlist.append(currentword)
+            # elif currentword.mPoint >= 3:
+            #     monika_wordlist.append(currentword)
     # Original Wordlist
     with renpy.file('poemwords.txt') as wordfile:
         for line in wordfile:
@@ -194,7 +208,7 @@ label poem(transition=True,totalWords=20):
                 show s_sticker at sticker_4left
                 show n_sticker at sticker_4midleft
                 # Check if hair down Monika playthrough
-                if monika_type == 1 and ch12_markov_agree:
+                if monika_type == 1 and ch12_markov_agree and chapter > 12:
                     if random.randint(0,50) == 0 and not m_hairdown_poemglitch:
                         $ m_hairdown_poemglitch = True
                         play sound "sfx/glitch3.ogg"
@@ -252,6 +266,10 @@ label poem(transition=True,totalWords=20):
         mPointTotal = 0
         if persistent.playthrough == 0:
             wordlist = list(full_wordlist)
+            # swordlist = list(sayori_wordlist)
+            # nwordlist = list(natsuki_wordlist)
+            # ywordlist = list(yuri_wordlist)
+            # mwordlist = list(monika_wordlist)
         else:
             wordlist = list(full_wordlist_old)
 
@@ -285,6 +303,10 @@ label poem(transition=True,totalWords=20):
             else:
                 pstring = str(progress)
             ui.text(pstring + "/" + str(numWords), style="poemgame_text", xpos=810, ypos=80, color='#000')
+            sInList = False
+            nInList = False
+            yInList = False
+            mInList = False
             for j in range(2):
                 if j == 0: x = 440
                 else: x = 680
@@ -297,11 +319,44 @@ label poem(transition=True,totalWords=20):
                                 s[k] = ' '
                             elif random.randint(0, 4) == 0:
                                 s[k] = random.choice(nonunicode)
-                        word = PoemWord("".join(s), 0, 0, 0, False)
+                        word = PoemWord("".join(s), 0, 0, 0, 0, False)
                     elif persistent.playthrough == 2 and not poemgame_glitch and chapter >= 1 and progress < numWords and random.randint(0, 400) == 0:
-                        word = PoemWord(glitchtext(80), 0, 0, 0, True)
+                        word = PoemWord(glitchtext(80), 0, 0, 0, 0, True)
                     else:
-                        word = random.choice(wordlist)
+                        if not sInList and i >= 1 and j == 1 and persistent.playthrough == 0:
+                            word = random.choice([a for a in wordlist if a.sPoint >= 3])
+                            # wordlist.remove(word)
+                            # swordlist.remove(newword)
+                            # word.word = word.word+" tests"
+                            sInList = True
+                        elif not nInList and i >= 2 and j == 1 and persistent.playthrough == 0:
+                            word = random.choice([a for a in wordlist if a.nPoint >= 3])
+                            # wordlist.remove(word)
+                            # nwordlist.remove(word)
+                            # word.word = word.word+" testn"
+                            nInList = True
+                        elif not yInList and i >= 3 and j == 1 and persistent.playthrough == 0:
+                            word = random.choice([a for a in wordlist if a.yPoint >= 3])
+                            # wordlist.remove(word)
+                            # ywordlist.remove(word)
+                            # word.word = word.word+" testy"
+                            yInList = True
+                        elif not mInList and i >= 4 and j == 1 and persistent.playthrough == 0:
+                            word = random.choice([a for a in wordlist if a.mPoint >= 3])
+                            # wordlist.remove(word)
+                            # mwordlist.remove(word)
+                            # word.word = word.word+" testm"
+                            mInList = True
+                        else:
+                            word = random.choice(wordlist)
+                            if word.sPoint >= 3:
+                                sInList = True
+                            elif word.nPoint >= 3:
+                                nInList = True
+                            elif word.yPoint >= 3:
+                                yInList = True
+                            elif word.mPoint >= 3:
+                                mInList = True
                         wordlist.remove(word)
                     ui.textbutton(word.word, clicked=ui.returns(word), text_style="poemgame_text", xpos=x, ypos=i * 56 + ystart)
                 ui.close()
@@ -324,7 +379,7 @@ label poem(transition=True,totalWords=20):
                         if t.yPoint >= 3:
                             renpy.show("y_sticker hop")
                         if t.mPoint >= 3:
-                            if ch12_markov_agree and monika_type == 1:
+                            if ch12_markov_agree and monika_type == 1 and chapter > 12:
                                 if random.randint(0,500) == 0 and not m_hairdown_poemglitch:
                                     m_hairdown_poemglitch = True
                                     renpy.sound.play([ "<silence .72>", "sfx/glitch3.ogg" ])

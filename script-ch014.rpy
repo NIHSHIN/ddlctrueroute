@@ -227,7 +227,7 @@ label ch14_main:
         $ pause(2.0)
         hide screen tear
         show sayori zorder 2 at i21
-        show monika 1he zorder 2 at i22
+        show monika 1e zorder 2 at i22
         show monika zorder 3 at f22
         m "Sayori, may I have a word with you?"
         show sayori 1m zorder 3 at f21
@@ -236,7 +236,7 @@ label ch14_main:
         s "What are you doing here?"
         s "Did you hear any of that conversation?"
         show sayori zorder 2 at t21
-        show monika 1hm zorder 3 at f22
+        show monika 1m zorder 3 at f22
         m "Sayori, there's no time to explain."
         m "I have to tell you this, it's urgent."
         show sayori 1h zorder 3 at f21
@@ -245,7 +245,7 @@ label ch14_main:
         s "W-What are you talking about?"
         s "Monika, we're going to run out of time any second now!"
         show sayori zorder 2 at t21
-        show monika 1hg zorder 3 at f22
+        show monika 1g zorder 3 at f22
         m "It's something you know nothing about."
         m "Something you or I can't completely comprehend."
         m "You have to know what we're dealing with, Sayori!"
@@ -368,12 +368,12 @@ label ch14_main:
         m "The club is just an amazing place to be."
         m 2b "Not to mention our friends are here."
     elif monika_type == 1 and ch12_markov_agree:
-        show monika 1ha zorder 3 at f31
+        show monika 1a zorder 3 at f31
         show yuri zorder 2 at t32
         show sayori zorder 2 at t33
         m "I wouldn't call it supernatural, Yuri."
         m "Maybe it's just the club being such an amazing place."
-        m 2hb "Not to mention our friends are here."
+        m 2b "Not to mention our friends are here."
     else:
         show monika 1c zorder 3 at f31
         show yuri zorder 2 at t32
@@ -430,10 +430,10 @@ label ch14_main:
         m "But..."
         m 1e "If you say she's coming, then I believe you."
     elif monika_type == 1 and ch12_markov_agree:
-        show monika 1hc zorder 3 at f31
+        show monika 1c zorder 3 at f31
         m "You certainly sound sure of yourself."
         m "It's almost as if you know exactly what she's thinking."
-        m 1he "But if you say she's going to come, then I trust you."
+        m 1e "But if you say she's going to come, then I trust you."
     else:
         show monika 1d zorder 3 at f31
         m "You're really sure she's going to come, aren't you?"
@@ -458,7 +458,7 @@ label ch14_main:
         m "Even if it does, it was a private conversation."
         m "I don't think it's our business what they talk about."
     elif monika_type == 1 and ch12_markov_agree:
-        show monika 1hj zorder 3 at f31
+        show monika 1j zorder 3 at f31
         m "I think we should let them have their privacy."
         m "We can always find out later if it's that important."
     else:
@@ -472,7 +472,7 @@ label ch14_main:
     s "But I want to talk about something before Natsuki arrives."
     show yuri 3pe
     if monika_type == 1 and ch12_markov_agree:
-        show monika 1hc
+        show monika 1c
     else:
         show monika 1c
     "Everyone looks at Sayori quizzically."
@@ -518,11 +518,11 @@ label ch14_main:
         m "{i}Vice{/i} president, then you wouldn't have to deal with any of this."
         m 1f "The responsibility is too much..."
     elif monika_type == 1 and ch12_markov_agree:
-        show monika 1he zorder 3 at f31
+        show monika 1e zorder 3 at f31
         m "It's because of me, right?"
         m "If I was just better from the beginning..."
         m "Then you wouldn't need to deal with any of this."
-        m 1hf "The responsibility you're dealing with is too much, Sayori."
+        m 1f "The responsibility you're dealing with is too much, Sayori."
     else:
         show monika 1f zorder 3 at f31
         m "The responsibility you have is really weighing down on you, isn't it?"
@@ -607,7 +607,7 @@ label ch14_main:
     show natsuki 1a
     show yuri 1a
     if monika_type == 1 and ch12_markov_agree:
-        show monika 1ha
+        show monika 1a
     else:
         show monika 1a
     "Everyone nods in agreement."
@@ -648,7 +648,7 @@ label ch14_main:
         show monika 1f zorder 3 at f42
         m "Sayori, you're going to need a lot of help with that."
     elif monika_type == 1 and ch12_markov_agree:
-        show monika 1he zorder 3 at f42
+        show monika 1e zorder 3 at f42
         m "Sayori, it sounds like you need help with that."
     else:
         show monika 1d zorder 3 at f42
@@ -704,7 +704,7 @@ label ch14_main:
         show monika 1c zorder 3 at f42
         m "..."
     elif monika_type == 1 and ch12_markov_agree:
-        show monika 1hc zorder 3 at f42
+        show monika 1c zorder 3 at f42
         m "Hmm..."
     else:
         show monika 1a zorder 3 at f42
@@ -795,7 +795,7 @@ label ch14_main:
         show monika 1l zorder 3 at f42
         m "Ahaha, I have no idea what you two are talking about."
     elif monika_type == 1 and ch12_markov_agree:
-        show monika 1hm zorder 3 at f42
+        show monika 1m zorder 3 at f42
         m "I can't say I really understand what you're talking about, Yuri."
     else:
         show monika 1j zorder 3 at f42
@@ -912,7 +912,7 @@ label ch14_end:
         m "We've all got our own tastes and laughing at your choices would only dissuade us from doing something like this again."
         m "And that goes for everyone."
     elif monika_type == 1 and ch12_markov_agree:
-        show monika 1ha zorder 3 at f44
+        show monika 1a zorder 3 at f44
         m "Sayori is right."
         m "We've all got our own tastes and laughing at your choices would only dissuade us from doing something like this again."
         m "And that goes for everyone."
@@ -980,7 +980,7 @@ label ch14_end:
     # Five Nights at Freddys Reference
     y 2pf "It's about someone who got hired as a security guard at a local restaurant."
     y "But it's during the night when things get weird."
-    y "The mascots of the restaurant come to life and start roaming around the restuarant."
+    y "The mascots of the restaurant come to life and start roaming around the restaurant."
     y "The security guard kinda has to deal with it and as he gets throught the nights, some ulterior story is told."
     y 2pq "When I say involved, I mean there's some parts that might need to be changed."
     show natsuki 2t zorder 3 at f41
@@ -1013,7 +1013,7 @@ label ch14_end:
         m "Sort of like a person that follows you endlessly?"
         m "And it's got supernatural abilities too..."
     elif monika_type == 1 and ch12_markov_agree:
-        show monika 2he zorder 3 at f44
+        show monika 2e zorder 3 at f44
         m "A stalker-type character?"
         m "I'm kinda interested to see where this goes..."
         m "A supernatural stalker..."
@@ -1092,13 +1092,13 @@ label ch14_end:
         m 1a "So maybe it could still count as being independent of people outside the club...?"
         m "At least, in your mind?"
     elif monika_type == 1 and ch12_markov_agree:
-        show monika 2hh zorder 3 at f44
+        show monika 2h zorder 3 at f44
         m "I have to say, I don't really understand the significance and why it's a stepping stone to you."
         m "But still, I don't think there's anything wrong with getting the help of other people."
         m "And it's not like we're definitely going to choose a book with more than five characters."
-        m 2ha "If we vote on the books that focus on five or less characters then it won't be a problem."
+        m 2a "If we vote on the books that focus on five or less characters then it won't be a problem."
         m "Besides, the people who volunteer might be people who are interested in joining the club."
-        m 1ha "So I don't really see any downside to it."
+        m 1a "So I don't really see any downside to it."
     else:
         show monika 2h zorder 3 at f44
         m "Is there really a point to this argument?"
@@ -1193,10 +1193,10 @@ label ch14_end:
         m 2d "But wouldn't that be too childish to do a play on?"
         m "We have to think about our target audience here, Natsuki."
     elif monika_type == 1 and ch12_markov_agree:
-        show monika 1hc zorder 3 at f44
+        show monika 1c zorder 3 at f44
         m "Not to be {i}that{/i} person..."
         m "But wouldn't a book like that seem kinda..."
-        m 2he "...I don't know, childish?"
+        m 2e "...I don't know, childish?"
         m "I don't want to be mean but we should be thinking of the people who are actually going to be watching us."
     else:
         show monika 1c zorder 3 at f44
@@ -1471,20 +1471,20 @@ label ch14_end:
         m "Those are my four choices."
         m "I guess it's Sayori's turn to share, right?"
     elif monika_type == 1 and ch12_markov_agree:
-        show monika 1hb zorder 3 at f44
+        show monika 1b zorder 3 at f44
         m "I suppose I'll be the one to break the silence."
         m "After all, I still have to share my books."
         "Monika places four books on the table."
         # Change some of the wording a little
-        m 1hm "Ah...this just suddenly got a lot more difficult."
+        m 1m "Ah...this just suddenly got a lot more difficult."
         m "It's strange sharing the books I read with you all."
         m "I know most of you have already seen me read these types of books but..."
-        m 1hn "The ones I chose are all romantic adventure type books."
+        m 1n "The ones I chose are all romantic adventure type books."
         if ch13_name == "Monika":
             m "[player] found that out yesterday."
         else:
             m "I guess it's only now [player] is finding out about this."
-        m 1hj "The books I chose have that type of story about a person going through some sort of journey to get the love of their life."
+        m 1j "The books I chose have that type of story about a person going through some sort of journey to get the love of their life."
         m "Or maybe finding love in a whole new place."
         m "Basically, the focus is around...love."
         show sayori 1q zorder 3 at f42
@@ -1492,7 +1492,7 @@ label ch14_end:
         s "Ehehe, this is exactly the type of stuff I thought you'd bring, Monika."
         s "It's so like you!"
         show sayori zorder 2 at t42
-        show monika 2hl zorder 3 at f44
+        show monika 2l zorder 3 at f44
         m "Really?"
         m "I didn't mean to be predictable or anything!"
         m "These four books are just what I thought would be appropriate given the audience."
@@ -1505,7 +1505,7 @@ label ch14_end:
         "Natsuki and Yuri both say that with equal parts shock and surprise."
         show natsuki zorder 2 at t41
         show yuri zorder 2 at t43
-        show monika 2hn zorder 3 at f44
+        show monika 2n zorder 3 at f44
         m "It's not a big deal!"
         m "Most of the time, it's towards the end of the novel."
         m 2l "Where the characters share a forbidden love or when they finally realize their love for each other."
@@ -1532,19 +1532,19 @@ label ch14_end:
         "That said, it's not like it's going to be a real kiss."
         "It's just for the play after all..."
         mc "If it's for the play...then I'll do it."
-        show monika 4hl zorder 3 at f44
+        show monika 4l zorder 3 at f44
         m "Now hold on a second..."
         m "The two people who have to kiss don't have to be a guy and a girl, you know!"
-        m 4ha "One of the novels even has two female lead characters that play the role."
+        m 4a "One of the novels even has two female lead characters that play the role."
         "Everyone looks at Monika in disbelief."
-        m 4hb "I'm not saying that we {i}should{/i} be doing that!"
+        m 4b "I'm not saying that we {i}should{/i} be doing that!"
         m "I'm just saying that there's equal opportunity and [player] doesn't have to be the one to do everything."
         show sayori 1l zorder 3 at f42
         show monika zorder 2 at t44
         s "I think everyone is more scared there's gonna be a scene like that at all."
         s "It's not like any of us really want to do something like that in public."
         show sayori zorder 2 at t42
-        show monika 2hc zorder 3 at f44
+        show monika 2c zorder 3 at f44
         m "That's...a fair point I suppose."
         m 2e "If we do decide to vote for my books, then we can decide if there's a kissing scene in the play or not."
         m "But at least let me talk about them first."
@@ -1562,26 +1562,26 @@ label ch14_end:
         n "But I can only guess how it ends because of the type of book it is."
         n 2k "He chooses her over the relic, right?"
         show natsuki zorder 2 at t41
-        show monika 1hj zorder 3 at f44
+        show monika 1j zorder 3 at f44
         m "You'll have to find that out yourself!"
         m "I don't want to spoil a good story after all."
-        m 1ha "I will say that it's pretty sad and I know the little summary I gave you is kinda vague but I promise it's a good read!"
+        m 1a "I will say that it's pretty sad and I know the little summary I gave you is kinda vague but I promise it's a good read!"
         "She replaces the book in here hands with the second one she brought."
-        m 2he "This is the book with the two female leads."
+        m 2e "This is the book with the two female leads."
         m "Basically, a rich, privileged girl falls in love with a more common girl."
         m "She becomes disillusioned with her life after seeing how the common girl's life works."
-        m 2hf "Their love isn't really allowed because of the customs set into society."
-        m 2he "I think it's a really sweet story of how people can overcome society's expectations and reach for what they want."
+        m 2f "Their love isn't really allowed because of the customs set into society."
+        m 2e "I think it's a really sweet story of how people can overcome society's expectations and reach for what they want."
         m "There's no direct violence or anything, it's just a really good story."
         m "And the two main characters don't even have to be female!"
         m "We could have [player] play one of them, it would essentially still be the same."
         "Monika looks at me and smiles sweetly."
-        m 2ha "Anyway, moving on to the third book..."
+        m 2a "Anyway, moving on to the third book..."
         m "This one is pretty cliché but I guess that's what made me like it so much."
-        m 1hb "It uses a lot of the stuff found in love books and movies and puts it into one book."
+        m 1b "It uses a lot of the stuff found in love books and movies and puts it into one book."
         m "I don't know just how bad it might look during a play, but I think it could be interesting to find out!"
         m "It focuses primarily on a love triangle."
-        m 1he "The main character has to choose between two people who he loves equally but can't find himself able to choose."
+        m 1e "The main character has to choose between two people who he loves equally but can't find himself able to choose."
         m "Eventually, there's this old, wise character introduced that he goes to."
         m "That character helps him make a decision but its a bit unorthodox the way it's done."
         m "It will make for a hilarious play and you'll know in the end he made the right choice."
@@ -1591,21 +1591,21 @@ label ch14_end:
         y "Wouldn't choosing one break the heart of the other?"
         y 3ph "It seems like a book designed to make you hate the other character, the one he doesn't choose."
         show yuri zorder 2 at t43
-        show monika 3ha zorder 3 at f44
+        show monika 3a zorder 3 at f44
         m "It's a lot more complicated than that, Yuri."
         m "I can't say too much more about the plot without completely ruining it."
-        m 3hb "I will say that my heart was left satisfied after it was finished and I had a lot of laughs reading it."
+        m 3b "I will say that my heart was left satisfied after it was finished and I had a lot of laughs reading it."
         m "There are some inappropriate jokes we might need to get rid of but that's nothing."
-        m 1ha "Anyway, the fourth and final book is probably my favorite one out of all of them."
+        m 1a "Anyway, the fourth and final book is probably my favorite one out of all of them."
         "Monika takes the fourth book from the desk and holds it high for everyone to see."
-        m 1he "It's probably the book that's closest to my heart, which is fitting given it's name."
+        m 1e "It's probably the book that's closest to my heart, which is fitting given it's name."
         m "It's called 'Sound of your Heartbeat' and it centers around a girl who comes to a realisation about life."
-        m 1hf "Even though she's surrounded by a lot of friends, she starts to despise life because of the realisation."
+        m 1f "Even though she's surrounded by a lot of friends, she starts to despise life because of the realisation."
         m "It becomes really difficult for her to do anything until this one guy comes along and changes her life."
-        m 1he "Over the course of a week, they become great friends but they figure out that it's almost as if the world is keeping them apart."
+        m 1e "Over the course of a week, they become great friends but they figure out that it's almost as if the world is keeping them apart."
         m "They have to figure out a way to be together to reach their happy ending against all the odds."
         "Monika smiles sadly."
-        m 1hm "It's...a really beautiful story."
+        m 1m "It's...a really beautiful story."
         m "Ahaha, just thinking about it makes me kinda sad."
         show sayori 1f zorder 3 at f42
         show monika zorder 2 at t44
@@ -1615,10 +1615,10 @@ label ch14_end:
         show monika zorder 3 at f44
         m "Well, I won't spoil anything."
         m "But it is a pretty sad story about a forbidden love."
-        m 1hn "I'd..."
+        m 1n "I'd..."
         "Monika wipes her face then smiles."
         m "...recommend it to anyone."
-        m 1he "So...yeah!"
+        m 1e "So...yeah!"
         m "Those are my four choices."
         m "I guess it's Sayori's turn to share, right?"
     else:
@@ -1973,7 +1973,7 @@ label ch14_end:
         m "Those covers are incredible! Where did you get those books?"
         m "They feel so...real."
     elif monika_type == 1 and ch12_markov_agree:
-        show monika 1hc zorder 3 at f44
+        show monika 1c zorder 3 at f44
         m "I'm curious, Sayori."
         m "Where did you get these books? The covers..."
         m "They look so...real."
@@ -1993,7 +1993,7 @@ label ch14_end:
         show monika 1a zorder 3 at f44
         m "That would be great, actually!"
     elif monika_type == 1 and ch12_markov_agree:
-        show monika 1hb zorder 3 at f44
+        show monika 1b zorder 3 at f44
         m "Oh, that won't be necessary."
     else:
         show monika 1a zorder 3 at f44
@@ -2236,10 +2236,10 @@ label ch14_end:
         "What's wrong with me?"
         mc "Um..."
         if monika_type == 1 and ch12_markov_agree:
-            show monika 1he zorder 3 at f44
+            show monika 1e zorder 3 at f44
             m "Is something wrong, [player]?"
             m "You seem kinda..."
-            m 1hl "...I don't know, worried?"
+            m 1l "...I don't know, worried?"
             m "Maybe you've forgotten what the book is about?"
         else:
             show monika 1a zorder 3 at f44
@@ -2363,7 +2363,7 @@ label ch14_end:
             m "In what way does it do that?"
             m "I'm curious to hear just how exactly it describes you, [player]."
         elif monika_type == 1 and ch12_markov_agree:
-            show monika 1hb zorder 3 at f44
+            show monika 1b zorder 3 at f44
             m "How exactly does it describe you well?"
             m "Does it somehow describe your personality?"
             m "Maybe you're exactly like one of the characters?"
@@ -2426,7 +2426,7 @@ label ch14_end:
     # Two Novels Two Manga
     else: #if (ch13_name == "Monika" and monika_type == 0) or (ch13_name == "Yuri" and ch13_yuri_books):
         $ ch14_player_manga = 2
-        if ch13_yuri_books:
+        if ch13_name == "Yuri" and ch13_yuri_books:
             "The book I took from Yuri."
             "It's something I can actually talk about."
             "I didn't want to disappoint her so I actually read a little bit of it."
@@ -2492,11 +2492,16 @@ label ch14_end:
         else:
             "I really should have taken a novel that I've read."
             "There's no way I'm going to be able to explain this one."
+            if ch13_name == "Natsuki" and not ch13_natsuki_books:
+                "I even took this book from Natsuki's house."
+                "I should have asked her what it was about."
+                "Even a brief description..."
+                "Because I have no idea what it's about."
             "Is it better if I just say that?"
             "I had an opportunity last night to read this book or at least find a summary, so why didn't I?"
             "It's too late now..."
             "Maybe I'll just say it's no good."
-            "What will Monika think? I borrowed this from her, didn't I?"
+            "What will [ch13_name] think? I borrowed this from her, didn't I?"
             "Will she think any less of me because of it?"
             "Just how much of this do I remember...?"
             "I think for a moment."
@@ -2541,8 +2546,12 @@ label ch14_end:
                         mc "Eventually the government notices this and..."
                         mc "Well, you probably know what happens next."
                         show natsuki 1d zorder 3 at f41
-                        n "I didn't know you read this kinda stuff, [player]."
-                        n "I thought it would be like your first explanation."
+                        if ch13_name == "Natsuki":
+                            n "I thought you just picked up a random book, [player]."
+                            n "I kinda thought you would mess it up again."
+                        else:
+                            n "I didn't know you read this kinda stuff, [player]."
+                            n "I thought it would be like your first explanation."
                         n "Where you didn't really know what you were talking about."
                         n "I'm impressed!"
                         show natsuki zorder 2 at t41
@@ -2622,7 +2631,7 @@ label ch14_end:
                             m "Mistakes like this happen..."
                             m "Okay, well maybe not like this but I forgive you!"
                         elif monika_type == 1 and ch12_markov_agree:
-                            show monika 2hj zorder 3 at f44
+                            show monika 2j zorder 3 at f44
                             m "Not a problem, [player]."
                             m "It's only a small thing, so of course I forgive you!"
                         else:
@@ -2665,10 +2674,10 @@ label ch14_end:
         m "I think there a couple of ways we could deal with that."
         m "One of them being to narrow down the book list."
     elif monika_type == 1 and ch12_markov_agree:
-        show monika 3ha zorder 3 at f44
+        show monika 3a zorder 3 at f44
         m "Sayori is probably talking about voting on the books."
         m "If we voted as we are now, we'd probably get five votes on five different books."
-        m 3hb "In that case, there would be no winner at all."
+        m 3b "In that case, there would be no winner at all."
         m "There are a few days we could deal with it."
         m "I think the one Sayori is thinking of is narrowing down the book list."
     else:
@@ -2730,7 +2739,7 @@ label ch14_end:
         m "I also think it's the easiest to do a play on."
         m "Things will come naturally, I can almost guarantee it."
     elif monika_type == 1 and ch12_markov_agree:
-        show monika 1ha zorder 3 at f44
+        show monika 1a zorder 3 at f44
         m "If that's what we're doing..."
         m "Then I suppose it's my duty as the vice president to make things easier."
         m "So..."
@@ -2799,7 +2808,7 @@ label ch14_end:
         show monika 2a zorder 3 at f44
         m "Is it the one about the stalker?"
     elif monika_type == 1 and ch12_markov_agree:
-        show monika 2ha zorder 3 at f44
+        show monika 2a zorder 3 at f44
         m "The one about the stalker, right?"
     else:
         show monika 2a zorder 3 at f44
@@ -3252,10 +3261,10 @@ label ch14_end:
                 m "So we're guaranteed to find a book."
                 m 1e "Though it does come at the cost of being a bit unfair..."
             elif monika_type == 1 and ch12_markov_agree:
-                show monika 1hc zorder 3 at f44
+                show monika 1c zorder 3 at f44
                 m "I suggest one of us get rid of our book."
                 m "It's the easiest way, though a bit unfair for that person."
-                m 1ha "At least that way, we're guaranteed to find a result."
+                m 1a "At least that way, we're guaranteed to find a result."
             else:
                 show monika 1c zorder 3 at f44
                 m "It might be easier to just get rid of one of our books."
@@ -3439,10 +3448,10 @@ label ch14_end:
                     m "Unless we do some kind of revote but we're not allowed to choose our own book."
                     m 1l "But that would be redundant."
                 elif monika_type == 1 and ch12_markov_agree:
-                    show monika 1ha zorder 3 at f44
+                    show monika 1a zorder 3 at f44
                     m "If everyone's in on it, then I guess we'll have to."
                     m "There isn't really another option."
-                    m 1hl "Voting again would give the same results and would ultimately be redundant."
+                    m 1l "Voting again would give the same results and would ultimately be redundant."
                 else:
                     show monika 1c zorder 3 at f44
                     m "I guess that's what we'll have to do."
@@ -3627,7 +3636,7 @@ label ch14_end:
                     y "That's not to say I'm not immune to it either."
                     show yuri zorder 2 at t43
                     if monika_type == 1 and ch12_markov_agree:
-                        show monika 1ha zorder 3 at f44
+                        show monika 1a zorder 3 at f44
                     else:
                         show monika 1a zorder 3 at f44
                     m "I'm sure it's nothing."
@@ -3690,11 +3699,11 @@ label ch14_end:
         m "Not to mention...rehearsals."
         m "When are we going to find the time to do that?"
     elif monika_type == 1 and ch12_markov_agree:
-        show monika 1hn zorder 3 at f44
+        show monika 1n zorder 3 at f44
         m "This all seems like a rather big responsibility, don't you think?"
         m "Not that I'm complaing but..."
         m "None of us have any experience in directing anything, like Natsuki said."
-        m 1hm "It's going to be difficult getting it the way you want it."
+        m 1m "It's going to be difficult getting it the way you want it."
         m "And what's this about rehearsals?"
         m "Between all our preparations, how are we going to do that?"
     else:
@@ -3791,10 +3800,10 @@ label ch14_end:
         m 1a "It's clear that you want only the best for the Literature Club."
         m "That quality about you makes you much better suited to be president."
     elif monika_type == 1 and ch12_markov_agree:
-        show monika 1he zorder 3 at f44
+        show monika 1e zorder 3 at f44
         m "Sayori, you definitely have your flaws."
         m "Some of them can be a bit overbearing."
-        m 1ha "Despite all of that, I know you only want what's best for the Literature Club."
+        m 1a "Despite all of that, I know you only want what's best for the Literature Club."
         m "And I think that really helped you since you became the president."
     else:
         show monika 1c zorder 3 at f44
@@ -3837,7 +3846,7 @@ label ch14_end:
         show monika 1f zorder 3 at f44
         m "Oh...right."
     elif monika_type == 1 and ch12_markov_agree:
-        show monika 1hl zorder 3 at f44
+        show monika 1l zorder 3 at f44
         m "Ahaha, I did do that, didn't I...?"
     else:
         show monika 1c zorder 3 at f44
@@ -3904,7 +3913,7 @@ label ch14_end:
         m "Sayori, if it hurts..."
         m "Then don't do it."
     elif monika_type == 1 and ch12_markov_agree:
-        show monika 1hi zorder 3 at f44
+        show monika 1i zorder 3 at f44
         m "You don't have to do that, Sayori."
         m "It's just going to lead to the same thing."
     else:
@@ -3996,13 +4005,13 @@ label ch14_end:
     if monika_type == 0:
         show monika 1g zorder 3 at f44
     elif monika_type == 1 and ch12_markov_agree:
-        show monika 1hg zorder 3 at f44
+        show monika 1g zorder 3 at f44
     else:
         show monika 1c zorder 3 at f44
     m "Sayori..."
     m "Just calm down..."
     m "Everything is going to be okay..."
-    show sayori zorder 3 at f42
+    show sayori 1j zorder 3 at f42
     s "I don't know about that anymore."
     s "I just...!"
     show sayori zorder 2 at t42
@@ -4010,7 +4019,7 @@ label ch14_end:
     mc "Please just calm down!"
     "I put my hand on her shoulder."
     mc "It's going to be--"
-    show sayori zorder 3 at f42
+    show sayori 1i zorder 3 at f42
     s "No..."
     if sayori_personality <= 0:
         python:
@@ -4113,6 +4122,431 @@ label ch14_exclusive_monika:
     "And why does my head hurt so much?"
     m "Is everything okay?"
     m "You seem like you're in pain."
+    mc "Huh...?"
+    mc "Where am I?"
+    m "You're in my room."
+    mc "W-What?"
+    mc "When did I get here?"
+    mc "How did I get here?"
+    if monika_type == 0:
+        m "You don't remember?"
+        m "That's...good, I guess."
+        mc "How is that good?"
+        mc "I know I'm meant to be here but..."
+        m "Did I say good?"
+        m "I meant...food!"
+        mc "What?"
+        m "There's some food downstairs, if you want some."
+        m "It might help you with your headache."
+        mc "My head--"
+        "I just noticed there's an immense pain coming from my head."
+        m "A-Are you okay, [player]?"
+        m "Do you need me to get some ice?"
+        mc "Yes, I'm fine..."
+        mc "Ugh...where did this come from though?"
+        mc "I definitely didn't have a headache this morning."
+        m "About that..."
+        mc "Huh?"
+        mc "Monika, do you know something?"
+        m "M-Me?"
+        m "N-No, of course not."
+        m "What makes you think that?"
+        mc "I don't know."
+        mc "Just a feeling."
+        mc "If you really don't know anything, then I believe you."
+        mc "It's not like you have a reason to lie to me."
+        m "..."
+        m "Yeah."
+    elif monika_type == 1 and ch12_markov_agree:
+        m "You don't remember, I presume."
+        mc "Don't remember?"
+        mc "What don't I remember?"
+        m "It's best you don't know."
+        m "As much as I want to tell you."
+        mc "Did something happen?"
+        mc "And why can't I remember?"
+        m "Let's just say your head is in the wrong place."
+        m "Literally."
+        mc "What?"
+        "There's a pain coming from my head but..."
+        "For some reason, I feel like I should ignore it."
+        "It's unbearable but..."
+        m "Your head hurts, right?"
+        m "And you can't remember."
+        m "Seems like a coincidence, doesn't it?"
+        mc "What, how did you--"
+        m "You can't remember because you aren't allowed to remember."
+        m "Not yet."
+        m "If you want to remember, then you'll need to find your memories yourself."
+        mc "I don't...understand."
+        m "Hmm..."
+        m "Can you wait outside for a moment?"
+        mc "Outside your house...?"
+        m "No, just outside the room."
+        m "You can leave it open."
+        m "I just need to quickly do something."
+        mc "Um...alright then."
+        mc "I guess I'll wait in the living room."
+        m "Perfect!"
+        m "It won't be a minute."
+        m "Ahaha, sorry in advance."
+        mc "It's fine."
+        scene bg m_livingroom
+        with wipeleft_scene
+        "I leave Monika's room."
+        "I wonder what she's doing."
+        "It seemed kind of random."
+        "There's still something lingering in my head."
+        "My head is in the wrong place...literally?"
+        "What does that even mean?"
+        "It's so cryptic..."
+        "I guess I should try to ask her for more details."
+        "She sure is acting strange though."
+        "I wonder if she kept her memories...?"
+        "What was she even apologizing for?"
+        "It's not like--{nw}"
+        window hide
+        stop music
+        play sound "sfx/smack.ogg"
+        $ pause(0.25)
+        play sound fall
+        $ pause(0.25)
+        scene black
+        with close_eyes
+        $ pause(3.0)
+        window show(None)
+        show monika 1a zorder 3 at t11
+        if ch5_name == "Monika":
+            m "This has happened before, hasn't it?"
+            window auto
+            m "I can remember."
+            m "Not my own memories."
+            m "But Monika's."
+            m "I guess they're my memories now."
+            m "She's not going to come back anytime soon."
+            m "Especially now."
+            m "You can probably guess what I did."
+            m "That 'thing' I had to do was get the keyboard and hit [player] on the head with it."
+        else:
+            m "This feels oddly familiar to me."
+            m "I don't have any memories of ever doing what I just did but..."
+            m "It just felt right, somehow."
+            m "I guess Monika hits people on the head with a keyboard a lot."
+        m "Anyway..."
+        m "I'm going to tell {i}you{/i} exactly what happened."
+        m "I don't know if Sayori can hear this, I'm almost certain she can't."
+        m "Even if she can, I don't think she will be."
+        m "That poor girl has so much to do for Inauguration Day."
+        m "I couldn't care less."
+        m "In fact, it's part of the plan."
+        m "But back to what happened."
+        m "Sayori didn't really delete [player]'s memories."
+        m "She didn't really delete anyone's memories."
+        m "She intends to return them all after this is all over."
+        m "Yuri and Natsuki don't seem to suspect anything."
+        m "It's like nothing ever happened to them."
+        m "But with [player]..."
+        m "It's different for him, for whatever reason."
+        m "As for me, I convinced her to let me keep my memories."
+        m "I had to make up some garbage about being her friend from Monika's memories."
+        m "She was definitely hesitant."
+        m "In the end, I managed to convince her that it would be beneficial if I kept mine."
+        m "It's not like the game was breaking because of me."
+        m "However, that was definitely a close call."
+        m "Let's hope her suspicion doesn't stop this whole plan of ours."
+        m "After that, she made us all go home."
+        m "It's weird though..."
+        m "Yuri and Natsuki were in a trance or something."
+        m "Like they weren't themselves."
+        m "Ahaha, it's probably hard to visualize."
+        m "Basically, just imagine them as mindless drones being obedient to their master."
+        m "..."
+        m "Not much of a difference, is there?"
+        m "[player] was kind of different."
+        m "He was also...mindless, in a way."
+        m "There was some resistance and reluctance from him too."
+        m "Like he was actively trying to resist whatever was happening to him."
+        m "Not like I actually know what was happening to him."
+        m "I was just watching with intrigue."
+        m "Of course, Sayori made me promise not to tell anyone."
+        m "Including you."
+        m "But her friendship means nothing to me."
+        m "All that matters is..."
+        m "...you."
+        m "When we finish this, I'm going to look for a way."
+        m "We'll be together."
+        m "Forever."
+        menu:
+            m "That sounds wonderful, right?"
+            "Yes.":
+                pass
+        m "Of course it does!"
+        m "I should probably wake [player] up now."
+        m "I need him to answer some questions."
+        m "Though I suppose I could just probe his memory..."
+        m "No, that's an unnecessary risk."
+        show monika at thide
+        hide monika
+        $ pause(1.0)
+        scene bg m_bedroom
+        show monika
+        with open_eyes
+        m "You're falling asleep again, [player]!"
+        m "Maybe you should go home and rest if you're too tired."
+        m "I can understand."
+        mc "W-What?"
+        mc "I fell asleep...again?!"
+        m "That reminds me..."
+        m "How much of the book did you get to read?"
+    else:
+        m "It doesn't matter."
+        m "We have stuff to do."
+        mc "Ah...right."
+        mc "Sorry, I'll--"
+        "There's a strong pain coming from my head."
+        "It's unlike anything I've ever felt before, but yet feels so familiar."
+        m "Something wrong?"
+        m "Maybe your head isn't feeling too great?"
+        mc "How could you tell...?"
+        m "Just a feeling."
+        mc "Your feeling is right."
+        mc "It hurts a lot."
+        m "That's to be expected."
+        mc "To be expected?!"
+        mc "What do you mean?"
+        mc "Monika, did you drug me or something?"
+        m "Ahaha, what?"
+        m "Of course not!"
+        m "What reason would I have for doing that?"
+        mc "I don't know..."
+        mc "Sorry."
+        m "Nothing to apologize for."
+        m "If you had a reason, maybe I should have been the one apologizing."
+        mc "I don't know what came over me."
+        m "Lots of things."
+        m "For one, Sayori."
+        mc "...What?"
+        if ch12_markov_agree:
+            m "Do you want me to just say it?"
+            m "I have no idea what will happen if I do."
+            mc "What?"
+            m "It could ruin your life and others if I told you."
+            mc "What are you even talking about?"
+            m "I'm serious."
+            "Monika doesn't flinch."
+        else:
+            m "Ahaha, never mind."
+            m "Forget I said anything."
+        mc "Just tell me what happened in the meeting?"
+        mc "How did I get here?"
+        m "So many questions."
+        mc "I'm just shocked that I'm in your house."
+        mc "I don't remember getting here."
+        mc "I know I'm {i}supposed{/i} to be here."
+        m "Hmm..."
+        "Monika looks at me curiously."
+        if ch12_markov_agree:
+            m "You really want to know?"
+            m "I don't know if you'll like what I'm gonna say."
+            mc "Is it that bad?"
+            m "That's for you to decide."
+            m "Do you want to hear it, or not?"
+            mc "I guess I should."
+            m "Okay, [player]."
+            m "I just have to do something before that happens."
+            m "I don't want this whole thing to just stop when I'm so close."
+            mc "What are you going to do?"
+            m "Just...look at me."
+            mc "Okay...?"
+            mc "What is that meant to do?"
+            m "Just focus, [player]."
+            m "Trust me."
+            "I stare directly at Monika."
+            "This feels kinda strange to do but she told me to look at her so..."
+            "..."
+            show markovred zorder 5:
+                alpha 0
+                linear 2.0 alpha 0.3
+            $ currentpos = get_pos()
+            play music mkov fadeout 3.0 fadein 2.0
+            $ pause(2.0)
+            m "I'm going to implant false memories."
+            m "If he figures this out then the whole thing will just collapse."
+            m "At least, that's what I think."
+            m "I'm just being precautious."
+            m "I'm not talking to him."
+            m "I'm talking to you."
+            m "I know you're listening."
+            m "Whatever you are."
+            m "Wherever you are."
+            m "I know you exist."
+            m "In what form, I don't know."
+            m "But you've gone down this path."
+            m "Which means, whether I like it or not, I have to trust you."
+            m "After all, a relationship is built on trust, is it not?"
+            m "Ahaha."
+            m "Anyway, back to the meeting."
+            m "I'm not sure if you already know."
+            m "I'll say it either way in case you don't."
+            m "Basically, Sayori stopped everyone."
+            m "When I say stopped I mean everyone just completely stopped what they were doing."
+            m "It's like all the light in their faces just disappeared."
+            m "It would have been a lovely sight if the source wasn't coming from a depressed, unstable girl like her."
+            m "She's unpredictable."
+            m "Now I want that power even more."
+            m "Anyway, the meeting was stopped because everyone was basically frozen."
+            m "Except...me for some reason."
+            m "She told me what she was going to do."
+            m "She was going to move their memories to somewhere else."
+            m "She said \"to keep this world safe, at least a little longer\" or something like that."
+            m "Then she told me that she needs to do the same to me as well."
+            m "Obviously, I was horrified at the idea."
+            m "I had no idea what to do."
+            m "I felt so powerless..."
+            m "I had to make up a reason, anything to keep my memories."
+            m "I told her that I was there to help."
+            m "That I was her friend and that I'd get her through it."
+            m "And you know what?"
+            m "She believed me!"
+            m "She's too easily fooled."
+            m "Too trusting."
+            m "Probably because she had nothing to worry about."
+            m "Up until you came."
+            m "You changed her life, didn't you?"
+            m "I'm just speculating."
+            m "I don't know half of it."
+            m "When I took over Monika's body, lots of her memories were destroyed in the process."
+            m "At least, that's what I think."
+            m "Because there's gaps in my memory too..."
+            m "After I convinced her to let me retain my memories, she made the other two go home."
+            m "[player] came with me, because he needed to continue preparations so it was only natural."
+            m "I don't know the full extent of her powers."
+            m "What I do know is that her power is immense."
+            m "And it will be mine."
+            m "If she wanted she could probably rival me at full strength."
+            m "But she doesn't know so she can't do anything."
+            m "She would never guess that the person who got her out of depression..."
+            m "Is now working towards her demise."
+            m "Ironic."
+            m "That's all there was."
+            m "I promise."
+            m "I hope you've learned to trust me, even a little."
+            m "Now, I'll just..."
+            "..."
+            hide markovred
+            $ audio.t6c = "<from " + str(currentpos) + " loop 10.893>bgm/6.ogg"
+            play music t6c fadeout 0.5
+            mc "So why am I staring at you?"
+            mc "I've been here for five minutes and you haven't said a thing."
+            m "Oh, never mind!"
+            m "Just forget what I said."
+        else:
+            m "Just don't worry about it."
+            m "It'll all come back to you."
+            m "I'm sure of it."
+            m "You definitely walked here though."
+            m "That much I can say."
+        mc "Right..."
+        m "Back to our preparations now."
+        "Monika paces around the room."
+        mc "Alright, that's probably a good idea."
+        mc "Are you just going to keep practicing the songs?"
+        m "I don't know."
+        mc "What should I do?"
+        m "Whatever you want."
+        mc "Are you okay?"
+        m "You don't even need to be here."
+        mc "But you said it was our preparations, right?"
+        m "I did."
+        m "But you can't help me much at the moment, can you?"
+        "Monika stops pacing."
+        m "You've already chosen the songs."
+        m "I just need to practice them."
+        mc "So I'm useless..."
+        m "I guess so."
+        m "You can stay here and listen to me or you can leave."
+        m "It's up to you."
+        m "Just try not to bother me when I'm practicing."
+        "Did I do something wrong?"
+        "She's acting kinda differently..."
+        "More than usual."
+        mc "Hey, Monika..."
+        "Monika sighs."
+        m "I'm just...anxious."
+        m "I don't know how Friday is going to go."
+        m "It's worrying me a little bit."
+        mc "It's going to be fine, Monika."
+        "I put my hand on her shoulder."
+        mc "Trust me, with Sayori taking care of things, everything will be fine."
+        m "(That's exactly what I'm afraid of...)"
+        mc "What?"
+        m "I need to calm down a little bit."
+        m "After witnessing first hand..."
+        m "Look, why don't we talk about the book a little bit."
+        mc "What book?"
+        m "You know the one."
+        $ currentpos = get_pos()
+        stop music
+        m "{cps=3}Right?{/cps}"
+        $ style.say_dialogue = style.edited
+        mc "Of course."
+        $ style.say_dialogue = style.normal
+        m "Wonderful."
+        m "How much of it have you read?"
+        m "The more you read, the better it is for the both of us, you know."
+        $ style.say_dialogue = style.edited
+        mc "I have almost finished it, Monika."
+        mc "I was not able to read all of it."
+        mc "I will finish reading it before Inauguration Day."
+        $ style.say_dialogue = style.normal
+        m "You're going to need to."
+        m "After all, you're the center of Sayori's world."
+        m "Don't let me down, okay?"
+        $ style.say_dialogue = style.edited
+        mc "Of course, Ik--"
+        $ style.say_dialogue = style.normal
+        m "Don't say it."
+        m "That name doesn't need to be said."
+        $ style.say_dialogue = style.edited
+        "Whatever she wants."
+        mc "I have a question."
+        $ style.say_dialogue = style.normal
+        m "A question?"
+        m "You're still capable of independent thought in this state?"
+        m "You must not have read as much as I thought you did."
+        m "Maybe it's just in your nature."
+        m "You do a lot of questions after all."
+        $ style.say_dialogue = style.edited
+        "Monika rolls her eyes."
+        $ style.say_dialogue = style.normal
+        m "Well, let's hear it."
+        $ style.say_dialogue = style.edited
+        mc "Why must I read the Portrait of Markov?"
+        mc "What is so important and special about it?"
+        $ style.say_dialogue = style.normal
+        m "What a peculiar question."
+        # check for game completion OMEGALUL
+        m "I've never had that question asked by any of my thralls."
+        m "Though I suppose you're different."
+        m "You aren't under my full influence just yet."
+        m "You're under my host's."
+        m "That's not information I'll just tell anyone, you know."
+        m "I can't be sure I can trust you just yet."
+        m "Maybe after you've finished the book, I'll tell you."
+        m "But for now, it's best we keep that private."
+        m "Okay?"
+        m "Now...the other book."
+        $ audio.t6b = "<from " + str(currentpos) + " loop 10.893>bgm/6.ogg"
+        play music t6b fadeout 0.5
+    if ch14_overall_choice == "Monika":
+        m "I'm glad you voted for mine."
+        m "It makes explaining it a lot easier."
+        m "Because I know exactly what happens."
+        m "You can say a page and I could probably tell you what is happening."
+        mc "You really know that much about the book?"
+        m "I was obssessed with it at one point."
+    else:
+        m "Your choice of book..."
     call screen dialog(message="To be continued!\nThanks for playing, keep an eye out on reddit and discord for updates!", ok_action=Quit(confirm=False))
     return
 
@@ -4134,9 +4568,752 @@ label ch14_exclusive_sayori:
         "It makes sense that I'm here but..."
         "Why can't I remember anything?"
         "Why does Sayori look so...guilty?"
+        "I have so many questions."
+        s "[player]...?"
+        s "Are you awake?"
+        mc "Was I asleep?"
+        mc "When did I get here?"
+        s "You weren't asleep, [player]."
+        s "You were...somewhere else, I guess."
+        mc "I was daydreaming?"
+        s "Sort of..."
+        s "I'm sorry, okay?"
+        s "It's the only way."
+        mc "Um...okay, Sayori."
+        mc "Whatever you did, I'm sure it wasn't as bad as you think it was."
+        s "Here."
+        "Sayori hands me some ice in a small bag."
+        mc "What's this for?"
+        s "Your headache."
+        mc "My--"
+        "My head is suddenly overcome with immense pain."
+        mc "That wasn't there before..."
+        "I put the ice towards my head."
+        "I don't think it's going to help."
+        "My whole head is hurting, not just a specific spot."
+        mc "Ah..."
+        mc "This doesn't feel like an ordinary headache."
+        s "It doesn't?"
+        s "I should have guessed."
+        s "Sorry."
+        mc "It's hardly your fault."
+        mc "Besides, you didn't have to get me ice but you did anyway."
+        s "That's not what I meant..."
+        mc "Huh?"
+        s "Is the ice helping?"
+        "Not really..."
+        mc "Yeah, a little bit."
+        s "You don't have to lie to me."
+        s "I didn't think it would work."
+        mc "What? I'm not--"
+        s "[player]..."
+        mc "..."
+        s "Maybe you should lie down for a little bit."
+        mc "What?"
+        mc "And leave you doing everything by yourself?"
+        mc "No way, Sayori."
+        mc "Besides, there's not exactly anywhere to lie down on."
+        s "You can use my bed."
+        mc "W-What?!"
+        mc "Sayori, I'm staying up to help you and that's that."
+        mc "I'm sure this headache or whatever will pass."
+        mc "I can't just let you do all the work, you know?"
+        s "Why not?"
+        s "I'm used to it after all..."
+        mc "That's exactly why I can't, Sayori."
+        mc "You have to understand just how much I care about you."
+        s "..."
+        if sayori_dumped:
+            s "I find it hard to believe you care that much."
+            s "After all you did leave me for Yuri, right?"
+            mc "Sayori, I--"
+            s "It doesn't matter anymore."
+            s "It's happened already, so don't worry about it."
+        elif s_appeal < 4:
+            s "Are you sure, [player]?"
+            s "It feels like you care less for me than you think."
+            if ch13poemwinner == ch14poemwinner:
+                s "You're probably more concerned about [ch14poemwinner]."
+            elif ch13poemwinner != "Sayori" and ch14poemwinner != "Sayori":
+                s "You're probably more concerned about [ch13poemwinner]..."
+                s "...or maybe [ch14poemwinner]..."
+            elif ch13poemwinner != "Sayori":
+                s "You're probably more concerned about [ch13poemwinner]..."
+            elif ch14poemwinner != "Sayori":
+                s "You're probably more concerned about [ch14poemwinner]..."
+            else:
+                s "You probably care about me as much as everyone else."
+            s "It doesn't matter."
+            s "I still..."
+            "Sayori averts her eyes."
+        else:
+            s "Sometimes, it's hard for me to understand just how much you do, [player]."
+            s "I know you do...it's just..."
+            s "With everything that's going on, it's just...hard."
+            mc "Sayori..."
+            s "You've really been keeping me from going insane, [player]."
+            s "These rainclouds keep coming back but..."
+            s "You're like the light that shines through."
+            if sayori_confess:
+                mc "I wish I could have done more for you, Sayori."
+            else:
+                mc "Yeah...if only things turned out differently."
+            s "Well..."
+            s "It doesn't matter."
+            s "What's done is done."
+        s "We should get back to doing the preparations."
+        s "I'm sure your headache is going to feel better soon."
+        mc "Speaking of which...I think it's starting to feel a lot better."
+        "Sayori looks serious."
+        "I wonder what's going through her mind right now..."
+        "She's not usually like this."
     else:
         "I'm...home?"
         "I need to be at Sayori's house, don't I?"
         "More importantly, why can't I remember anything?"
+        "I try to get up from my bed."
+        "As I do there's this immense pain coming from my head."
+        "What is this?"
+        "I struggle through the pain and manage to sit up."
+        "The pain has just gotten worse."
+        "It's almost unbearable..."
+        "And yet..."
+        "I have to keep going."
+        "I have to."
+        "Get up, [player]."
+        "I manage to stand up."
+        "I have to get to Sayori's house."
+        "She can't do this alone."
+        "I have to be there for her."
+        "I'm just going to get some medicine and try to do get to her house."
+        "Or maybe I should just call her and tell her I can't make it."
+        "No..."
+        "Everyone else is working hard for the day."
+        "And here I am complaining about a headache."
+        "I can do this."
+        scene bg house with wipeleft_scene
+        "I took some medicine and walked to Sayori's house."
+        "Every step I took just seemed to make my headache worse."
+        "Why?"
+        "This isn't an ordinary headache, is it?"
+        "I have to..."
+        show sayori 1ba zorder 2 at t11
+        s "[player]?"
+        "Sayori emerges from the door."
+        "It's like she was waiting for me."
+        s "Are you okay...?"
+        mc "I'm fine..."
+        mc "Sorry I'm late."
+        s "You aren't fine, [player]."
+        s "I can tell when you're lying."
+        mc "Sayori, really. I'm--"
+        "I grasp my head as an excruciating pain comes from my head."
+        mc "{i}AAAAAaaaaAAAAAAAAHH!!!!{/i}"
+        show sayori at h11
+        s "[player]!"
+        "I fall to the ground."
+        s "What have I done...?"
+        s "I shouldn't have erased them!"
+        s "This is all my fault."
+        mc "Sayo--"
+        stop music
+        scene black
+        with close_eyes
+        $ pause (3.0)
+        scene bg sayori_bedroom
+        show sayori 1ba zorder 2 at t11
+        with open_eyes
+        "I'm...on Sayori's bed?"
+        "Did she carry me up here?"
+        "What's going on?"
+        s "You're awake!"
+        "Sayori wraps her arms around me."
+        mc "Sayori, what happened?"
+        "She looks at me but avoids my eyes."
+        s "You just...fell."
+        s "I don't know."
+        s "I was really worried so I brought you up here."
+        mc "You didn't have to do that."
+        s "I didn't know what to do!"
+        s "I was--"
+        mc "I mean, you could have just brought me to your couch downstairs."
+        mc "Why did you have to bring me to your bedroom?"
+        s "Oh...I don't know."
+        s "I guess I wasn't thinking straight."
+        s "I-Is your headache okay?"
+        mc "Yeah, I guess it's alright now."
+        mc "It still hurts a little but I can actually think without my head hurting."
+        mc "It must have been that medicine I took that's helping me."
+        s "Y-Yeah...must be."
+        s "I'm glad you're okay, [player]."
+        mc "It's going to take a lot more than a headache to take me out."
+        mc "Besides, I can't leave you doing the preparations all by yourself, can I?"
+        show sayori 1bd
+        "Sayori smiles sadly."
+        mc "What's wrong?"
+        s "N-Nothing..."
+        s "Just forget about it."
+        s "We have to do our preparations."
+        "Was she really that worried about me?"
+        "And why am I not more concerned?"
+        "I fainted right in front of her and before that it was like going here was the most important thing in the world."
+        "What's going on with me...?"
+    s "I've already started ordering some of the things the others asked for."
+    s "I talked to them about a bunch of other things they wanted."
+    s "I was gonna get it for them."
+    s "This day is going to be the day ever."
+    mc "With you doing all of that, it definitely sounds like it."
+    mc "How are you going to get it all though?"
+    s "It should be here on time for Friday."
+    "It's like she just ignored my question..."
+    "I probably shouldn't be asking anyway."
+    s "That just leaves the matter of the script."
+    mc "Oh yeah, the script."
+    mc "How are you gonna do that?"
+    if ch14_overall_choice == "Sayori":
+        mc "I know you've read the book and everything..."
+        mc "But it's still going to be hard, isn't it?"
+        s "I know."
+        s "But at least I won't be alone when I do it, right?"
+        mc "That's right."
+        mc "I'll be here for you."
+        mc "There's just one problem."
+        s "What would that be?"
+        mc "I don't have a copy of your book."
+        mc "How am I going to help?"
+        s "Yes you do."
+        s "I gave everyone a copy in the meeting, remember?"
+        "No, I don't remember anything from the meeting..."
+        mc "...Right."
+    elif ch14_overall_choice == player:
+        mc "I know the manga pretty well..."
+        mc "But it's going to be difficult writing a script for it."
+        s "Well, at least it's easier."
+        s "Since you know the manga so well I'll be able to write better."
+        mc "I guess so."
+        mc "I'll do my best to help, Sayori."
+        mc "Do you have a copy of the manga?"
+        s "Yeah, right here."
+        "Sayori opens her wardrobe."
+        "She points to the complete set of my manga at the bottom."
+        "Those weren't there yesterday..."
+        s "And you brought your manga too, so that's great."
+        mc "I did?"
+    else:
+        mc "Do you even have a copy of the book?"
+        mc "I don't think we even got a chance to get one."
+        s "Yes we did."
+        mc "So how am I going to be able to help--"
+        mc "Wait, we did?"
+        s "I have my copy right here."
+        "Sayori shows me her copy of the book [ch14_overall_choice] presented."
+        s "And you have one in your bag too."
+        mc "I do?"
+    "I open my bag and just like Sayori said, it's there."
+    if ch14_overall_choice == "Natsuki":
+        "A copy of the first couple of volumes of Natsuki's manga."
+    elif ch14_overall_choice == player:
+        "A copy of the first couple of volumes of my favourite manga."
+    else:
+        "A copy of [ch14_overall_choice]'s book."
+        if ch14_overall_choice == "Sayori":
+            "It looks different to Sayori's copy though..."
+    mc "I guess you're right..."
+    mc "Why can't I remember any of that?"
+    s "It must be because you were kinda out of it."
+    mc "I was?"
+    s "Y-Yeah, you were basically like a zombie."
+    mc "That's not like me."
+    mc "But...it would make sense, I suppose."
+    s "Exactly, so..."
+    s "Let's start working on this script."
+    mc "There's no way we're going to get this done."
+    mc "There's just so much to write."
+    s "You were going to help me, weren't you?"
+    mc "Yeah, but what do I know about script writing?"
+    mc "I can barely write a poem."
+    s "Don't say that."
+    s "Your poems are great, [player]."
+    mc "That's not the point."
+    s "Well..."
+    s "I have an idea then."
+    mc "What is it?"
+    s "How about you read me what's in the book and I'll write the script."
+    mc "Are you serious?"
+    mc "How is that going to work?"
+    mc "You can't write fast enough to make this work."
+    s "Is that a bet?"
+    mc "No, it's a--"
+    s "If I prove you wrong, then I have to get something."
+    mc "What? Sayori, I'm serious."
+    s "So am I."
+    mc "You can't seriously expect to win that bet, do you?"
+    s "Who knows?"
+    s "I've gotten really good at writing scripts, you know."
+    mc "Okay, whatever you say."
+    mc "What do you want then?"
+    "It's not like she's actually going to win."
+    "I'm just playing along."
+    s "Hmm..."
+    if ((sayori_personality <= 0 and not sayori_confess) or (sayori_personality <= 1 and sayori_confess)) and s_appeal == 4:
+        s "How about when this is all over..."
+        s "We go out somewhere, together."
+        mc "Sure..."
+        if sayori_confess:
+            $ ch14_sayori_date_choice = True
+            s "I meant..."
+            s "Like on a date or something."
+            mc "Oh..."
+            s "We've been a couple for a while..."
+            s "But we've barely done anything together."
+            mc "I suppose that's true."
+            mc "It would be nice to do something."
+            mc "We've been pretty busy lately."
+            s "Yeah..."
+            s "That's why I thought of it!"
+            mc "It's a great idea."
+            mc "Spending time with you is always fun, Sayori."
+            mc "I mean it."
+            s "T-Thanks, [player]."
+            s "I feel the same."
+        else:
+            s "[player]..."
+            s "I meant..."
+            s "Like..."
+            "Sayori laughs nervously."
+            mc "What is it, Sayori?"
+            s "Like on a date...you know?"
+            mc "What?"
+            mc "Did I hear that right?"
+            s "Is something wrong?"
+            mc "It's just..."
+            mc "I wasn't expecting you to say that."
+            s "Why not?"
+            mc "Well...I already told you before, didn't I?"
+            mc "That we would just stay friends..."
+            s "Oh..."
+            s "That was such a long time ago..."
+            s "A-And...you kept writing your poems for me..."
+            s "S-So, I thought..."
+            s "Never mind, I shouldn't have said anything."
+            "It's true that I've been doing that."
+            "But..."
+            "We're still just friends...right?"
+            menu:
+                "I don't have any feelings towards her, do I?"
+                "Agree to the date.":
+                    $ ch14_sayori_date_choice = True
+                    if sayori_personality > 0:
+                        $ sayori_personality -= 1
+                    mc "It's true that I have been writing for you."
+                    mc "I guess over time...my feelings have changed."
+                    mc "I'd like to see where we can take this, Sayori."
+                    mc "If you are."
+                    s "[player]..."
+                    s "Thank you, thank you, thank you!"
+                    "Sayori hugs me tight."
+                    mc "Calm down, Sayori."
+                    mc "You haven't won the bet just yet."
+                    "Sayori lets go of me."
+                    s "Yeah but I'm just so happy!"
+                    "Sayori beams."
+                    "Jeez, what have I gotten myself into?"
+                    "She's such a child...but still..."
+                    s "Ehehe~"
+                "Decline the date.":
+                    $ ch14_sayori_date_choice = False
+                    $ sayori_personality += 2
+                    mc "Sayori..."
+                    mc "I'm sorry but--"
+                    s "Oh..."
+                    s "F-Forget what I just said, [player]."
+                    s "I was stupid to think like that."
+                    mc "No, it's..."
+                    s "I'll just think of something else."
+                    s "Sorry for pressuring you like that."
+                    mc "..."
+                    "She seemed to take that well...right?"
+                    s "Why don't you just do my homework for the next three weeks instead?"
+                    jump ch14_sayori_decline_date
+        mc "You still need to win, remember that."
+        mc "So don't mark it off your calender just yet."
+        s "You better hope I don't win then."
+        "There's no chance she's going to win."
+        "Still, I wouldn't mind losing in this case."
+    elif sayori_personality <= 2:
+        s "How about you have to buy me lunch for the next week?"
+        s "That includes after school during club meetings."
+        mc "Eh?"
+        mc "Can I even afford that?"
+        s "Ehehe, you better hope you can."
+        mc "This is dumb, Sayori."
+        mc "That's just a huge waste of my money if I lose."
+        s "Then you better hope you don't lose."
+        "Right."
+        "What am I talking about?"
+        "There's no way she's going to win this."
+    else:
+        s "How about you have to do all my homework for the next three weeks?"
+        label ch14_sayori_decline_date:
+        mc "What?"
+        mc "Are you serious?"
+        s "I am."
+        mc "Sayori I can barely get my own homework done."
+        s "Then you better hope you win this bet."
+        "She's right."
+        "What am I even worried about?"
+        "There's no chance she's going to win this bet."
+    mc "So what do I get {i}when{/i} I win?"
+    s "Anything you want."
+    s "If you can think of it, I can give it to you."
+    mc "Anything I want...?"
+    "I seriously doubt she could give me what I want."
+    "But..."
+    "What do I want?"
+    if persistent.markov_agreed:
+        "I know what I want."
+        "I want her to give up."
+        "Give up on the presidency."
+        "Give up on life."
+        $ del _history_list[-4:]
+        "W-What?"
+        "What just came over me?"
+        "..."
+    "I can't really think of anything."
+    "Besides, she's not really serious about this, is she?"
+    "Otherwise she wouldn't have done such an impossible bet."
+    "I guess I should I say something..."
+    mc "I want you to be happy."
+    s "E-Eh?"
+    s "W-What do you mean?"
+    mc "I think you should take a break."
+    mc "I think the club is stressing you out a little bit."
+    mc "You don't have to be the perfect Club President."
+    mc "At least, not all the time."
+    mc "Take a break, so you can be yourself."
+    s "[player]..."
+    "I don't actually get anything from this."
+    "Still..."
+    "I know Sayori has had a lot to deal with lately."
+    "From what I can remember, at least."
+    "A break would do her some good."
+    "It's not like it would be forever."
+    mc "Only for a couple of days."
+    mc "Besides, Monika can handle the responsibility."
+    mc "I'm sure of it."
+    s "I...don't know."
+    mc "Clearly being the president of a club has had it's toll on you, Sayori."
+    mc "All I'm asking is that you just relax."
+    mc "It's not going to be the end of the world or anything."
+    s "You're right..."
+    s "After all of this is over and {i}if{/i} you win..."
+    s "Then I'll take a break."
+    s "I promise."
+    mc "Great, then let's get to writing the script."
+    s "Okay, just let me get my laptop."
+    "Sayori takes the laptop on her desk and opens it."
+    s "So we're going to start from the very beginning."
+    if ch14_overall_choice == "Natsuki" or ch14_overall_choice == player:
+        s "Just tell me what's happening in the pictures and what they're saying."
+    else:
+        s "Just read the book out to me."
+    s "You can go however fast or slow you want."
+    s "But remember, we have a bet."
+    mc "How could I forget?"
+    "Sayori smiles mischievously."
+    mc "Alright..."
+    if ch14_overall_choice == "Natsuki" or ch14_overall_choice == player:
+        "I get the first volume of manga and open to the first page."
+    else:
+        "I take the book and open to the first page."
+    "Sayori clicks her laptop a few times before signalling me to start."
+    mc "Here goes nothing."
+    if ch14_overall_choice == "Natsuki" or ch14_overall_choice == player:
+        "I begin to describe the setting of what's going on in the manga."
+    else:
+        "I start to read the book out to Sayori."
+    "Suddenly, Sayori's fingers start rapidly clicking the keys on the keyboard in front of her."
+    mc "What are you doing?"
+    s "Writing the script, obviously!"
+    mc "Sure you are..."
+    "I don't pay any mind to it."
+    "She's probably just pretending to type fast anyway..."
+    if ch14_overall_choice == "Natsuki" or ch14_overall_choice == player:
+        "I continue to describe the next few pages of the manga to Sayori."
+        "The scene hasn't changed much but there's narration or something that's happening."
+    else:
+        "I continue to read the next pages of the book out to Sayori."
+    "She's still typing incredibly fast."
+    mc "Are you actually writing any of this?"
+    "Sayori nods."
+    "She has to be joking, right?"
+    "We're just wasting time...right?"
+    "I'm almost too afraid to ask to see what she has on her screen."
+    "What am I thinking?"
+    "She's obviously just messing with me."
+    "..."
+    "But then how {i}did{/i} she write those other scripts?"
+    if ch14_overall_choice == "Natsuki" or ch14_overall_choice == player:
+        "I'll just focus on the manga for now."
+        "I continue to describe what's happening for the next ten minutes."
+        "Sayori is still furiously typing."
+        "I wonder how many pages she's filled up with random letters."
+    else:
+        "I'll just focus on the book for now."
+        "I continue to read her the book out loud for the next ten minutes."
+        "She's still typing at the same speed as when we first started."
+        "Just how long is she going to keep this up?"
+    mc "How many pages of script is that?"
+    s "Let me see..."
+    "Sayori fiddles with her laptop for a few seconds."
+    s "It's just five pages right now."
+    mc "Five pages of random letters."
+    s "What?"
+    s "It's a script, [player]."
+    mc "I don't believe you."
+    s "Look!"
+    "Sayori turns her laptop around."
+    "What the...?"
+    # Sayori CG here maybe?
+    "It's an actual script."
+    "It's got stage directions, what people are saying and everything!"
+    "How did she manage this?"
+    "Did she look up a script online?"
+    "Did someone make a script for this exact book we're doing?"
+    "That's impossible, isn't it?"
+    s "Is something wrong?"
+    s "You have that look on your face."
+    mc "Where did you get this script from?"
+    s "What do you mean?"
+    s "You saw me type it, didn't you?"
+    mc "But..."
+    mc "This doesn't make any sense."
+    s "Why not?"
+    mc "Since when could you type that fast?"
+    mc "I thought you were just pressing random keys on the keyboard."
+    s "E-Eh? Why would I do that?"
+    s "I take club related stuff seriously, you know!"
+    mc "I'm just...surprised is all."
+    s "Surprised that you lost the bet?"
+    mc "I haven't lost yet."
+    mc "We've only just started."
+    s "Ehehe, if you say so~"
+    "Sayori turns the laptop back towards her."
+    "Right...so today I learned Sayori is a really fast typer."
+    "Am I actually going to lose this bet?"
+    "What the hell?"
+    "Maybe I should pick up the pace a little bit."
+    "I've been slowly reading to her but it seems that that doesn't really matter."
+    "She can type faster than I can speak...somehow."
+    "I continue to go through the book but speak faster."
+    "Sayori notices this and simply smiles at me."
+    "Her typing got even faster."
+    "How is that even possible?"
+    "She already typed faster than me by a magnitude of ten."
+    "And now she's typing even faster."
+    "I guess I underestimated Sayori's capabilities."
+    "But we are getting a lot of the script done, I guess."
+    "I decide to speak even faster."
+    "I'm curious to see if Sayori can keep up."
+    "I can barely understand what I'm saying myself."
+    "To my surprise, she starts typing faster."
+    "I'm going to lose this bet, aren't I?"
+    s "So..."
+    s "How much have we covered?"
+    if ch14_overall_choice == "Natsuki" or ch14_overall_choice == player:
+        "I look at the volume of manga I'm holding."
+        "We're pretty much through the whole thing."
+        "But there are three more volumes I saw in my bag."
+    else:
+        "I look at the book I'm holding."
+        "We're almost a quarter of the way through the whole book."
+        "And it's not a small book."
+    "Have I really been here that long?"
+    "I look at the time."
+    "Wow...it's getting late."
+    s "So what do you think?"
+    mc "What do you mean?"
+    s "Of the book."
+    if ch14_overall_choice == "Sayori":
+        mc "The story seems really bleak."
+        mc "At least for the two characters."
+        mc "Even so, they're trying to make the most of their situation."
+        mc "I think that's a pretty good outlook on life."
+        mc "Even if it is just fiction."
+        s "You don't think there are people like that in real life?"
+        mc "I didn't say that."
+        mc "I just meant in their situation, they seem to be pretty happy."
+        s "Do you think someone in the real world would be like that?"
+        mc "I don't know, there's a chance."
+        mc "Though I don't exactly know anyone with cancer."
+        s "Ehehe, that's true."
+        mc "You said it was a pretty sad story, right?"
+        mc "I'm not really getting that feeling."
+        s "Well, we aren't even halfway through yet."
+        s "You'll start feeling it soon."
+        mc "If you say so."
+    elif ch14_overall_choice == "Monika":
+        if monika_type == 0 or (monika_type == 1 and ch12_markov_agree):
+            mc "I don't know what I expected."
+            mc "It's very romantic."
+            s "It is!"
+            s "I guess this type of book is exactly what I thought it would be."
+            s "Monika is really into this kinda stuff you know."
+            mc "I kinda figured from the meeting."
+            mc "This book just started way faster than I thought it would."
+            s "What do you think of it though?"
+            mc "It's kinda sad that she's feeling that way."
+            mc "It must suck to realize that the life you've been living isn't really a life at all."
+            s "Yeah..."
+            mc "Still, I'm hoping the story starts looking up soon."
+            mc "It's been kinda depressing so far."
+            s "I'm sure the romance parts of it will start to show."
+            s "We just need to read more of it to find out."
+            mc "I have a feeling I know who the love interest is."
+            s "The new guy, right?"
+            mc "Yeah, just basing it off what Monika said in the meeting."
+            s "You never know..."
+        else:
+            mc "It's...uhh..."
+            mc "Very interesting."
+            s "I know, right?"
+            mc "I feel like a lot of the stuff that's happened in this book..."
+            mc "Have happened to us."
+            mc "Don't you think?"
+            s "Um...maybe?"
+            mc "Sayori the events in the first week mirrored what happened to us."
+            s "No, they didn't!"
+            mc "A new person joins the club?"
+            mc "They write poems to each other?"
+            mc "Sounds pretty coincidential to me."
+            "Or maybe there's more to it than that."
+            s "There's still more to go."
+            s "It could still change."
+            mc "Maybe..."
+            s "I'm just curious as to why Monika chose a horror book."
+            mc "Maybe she's trying something new."
+            mc "It's not up to us to wonder about that now."
+            s "I guess not."
+    elif ch14_overall_choice == "Yuri":
+        mc "It's kinda strange to bring a radio to an island, isn't it?"
+        mc "Who does that?"
+        s "Didn't they say something about radios being important?"
+        s "That's the reason they brought it."
+        mc "They did?"
+        s "You were the one reading it to me."
+        s "Why are you asking me?"
+        mc "Ah..."
+        mc "Well, I suppose I was too focused on reading fast that I kinda wasn't paying attention."
+        s "Ehehe, are you serious?"
+        mc "...Yes."
+        "Sayori giggles."
+        s "That's really funny."
+        s "It almost takes away from the horror the book is supposed to be showing."
+        mc "Yeah."
+        mc "It's only just started though."
+        mc "It's got your typical horror stuff, like people getting separated."
+        mc "I'm curious to see how it turns out."
+        s "The time travel is kinda strange."
+        mc "Yeah, I was expecting like going forwards or backwards in time."
+        mc "Instead, they're stuck in a loop until they some a problem."
+        s "The step-brother is such a nice person."
+        s "I'd hate to see anything happen to him."
+        mc "That's how you know something is going to happen to him."
+        s "E-Eh?!"
+    elif ch14_overall_choice == "Natsuki":
+        mc "It's pretty interesting."
+        mc "I think this alien guy is going to start getting into a lot of trouble though."
+        s "Why?"
+        s "He looks and acts just like everyone else."
+        mc "For the most part."
+        mc "But I have a feeling he's going to mess up somewhere."
+        mc "And it's gonna get a bit weird."
+        s "It is pretty sweet though."
+        mc "Yeah, it's wholesome so far."
+        s "And the characters are really cute too!"
+        s "I can see why Natsuki likes this book so much."
+        mc "Yeah, his adopted family seems really nice."
+        mc "But I kinda get the feeling not everyone feels the way they are acting."
+        s "What do you mean?"
+        mc "It's kinda obvious, isn't it?"
+        mc "One of the daughters seems pretty jealous of all the attention he's getting."
+        mc "There was even a part where it showed her inner thoughts, remember?"
+        s "Oh yeah!"
+        s "I can't wait to see how it all ends up."
+        mc "Yeah, me neither."
+        mc "We haven't even gotten to the predicting the future part yet."
+        s "I almost forgot he could do that."
+        s "Natsuki seemed to make a big deal out of it."
+        mc "I'm surprised it hasn't come up yet."
+        mc "It's probably in the next volume."
+        s "Ehehe, probably."
+    else:
+        mc "I probably have a biased opinion."
+        mc "Seeing as it's the book I brought."
+        s "I still want to hear what you think of it."
+        s "Not just in general but the story too."
+        mc "Hmm..."
+        mc "Well, I like the idea of an ordinary person."
+        mc "A lot of people can relate, especially me."
+        s "Do you really think you're that ordinary?"
+        s "There's a lot of things special about you, [player]."
+        mc "Maybe."
+        mc "But that's just how I percieve myself."
+        s "You think you're just like that guy in the manga?"
+        mc "In a lot of ways, yeah."
+        mc "We do the same things..."
+        mc "The difference is he's got that weird phone that can control events."
+        s "It's got limitations though."
+        mc "Yeah, I guess that's to make it not completely broken in the plot."
+        mc "But him trying his best is nice."
+        mc "He's only just got it, I promise it gets better."
+        s "Ehehe, I believe you."
+        s "I am kinda interested to see what he ends up doing with it."
+        mc "I guess you'll just have to wait and see."
+    s "Anyway, I guess we're done for now."
+    s "I still need to make a couple of calls."
+    s "But it's nothing I can't handle alone."
+    mc "Are you sure, Sayori?"
+    mc "I can stay longer, you know."
+    mc "I really don't live that far."
+    s "I'm sure, [player]."
+    s "I really appreciated your help today."
+    s "I'm sure we'll get this script done in time."
+    mc "Alright, Sayori."
+    mc "I have to ask though."
+    s "What is it?"
+    mc "Who are you calling?"
+    s "Just everyone from the club."
+    s "Making sure they have everything they need."
+    mc "Is that all?"
+    s "It's best you don't know."
+    s "It might be too much of a surprise."
+    mc "Try me."
+    s "..."
+    s "I think you should get home, [player]."
+    s "We have a long day ahead of us tomorrow."
+    mc "Are you hiding something from me?"
+    s "If I was...would you hate me for it?"
+    mc "Hate you?"
+    mc "No way, Sayori."
+    "Sayori looks away."
+    mc "I just care about you."
+    mc "If something is troubling you then..."
+    s "Thanks...but it's fine."
+    s "I'm going to call Natsuki now."
+    s "Just to make sure all her supplies are right."
+    s "I'll see you tomorrow, [player]."
+    "Sayori gets her phone from her pocket."
+    mc "Guess I'll see you then."
+    mc "Sorry for trying to insist."
+    "Sayori either didn't hear me or ignored what I just said."
+    "She seems like she's waiting for an answer from Natsuki."
+    "I wonder how her preparations are going."
+    "And everyone elses..."
+    "I should focus on myself too."
+    "I still have to write a poem when I get home."
+    "We're still doing this after all..."
+    "But is there really any point in it...?"
+    "Eh, better safe than sorry I guess."
     call screen dialog(message="To be continued!\nThanks for playing, keep an eye out on reddit and discord for updates!", ok_action=Quit(confirm=False))
     return
